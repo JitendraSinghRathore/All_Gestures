@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@drawable/blog"
+    android:layout_height="match_parent"
+    tools:context=".L_R_T_B_Gesture">
+
+    <TextView
+        android:id="@+id/tvSwipDescription"
+        android:gravity="center"
+        android:text="gfg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

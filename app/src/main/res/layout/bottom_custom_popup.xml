@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@drawable/backgrounda"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/txtclose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/cross"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:text="Bottom Swipe Gesture"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/liner1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <com.github.glomadrian.grav.GravView
+            android:id="@+id/grav"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+            app:array_colors="@array/bubble"
+            app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+            app:regular_cell_size="300"
+            app:regular_variance="200"
+            app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+            app:ball_from_size="10dp"
+            app:ball_to_size="20dp"
+            app:animationGenerators="@array/BubbleAnimations"
+            app:side_to_side_min_duration="10000"
+            app:side_to_side_max_duration="10000"
+            app:side_to_side_direction="leftToRight"
+            app:shake_direction="vertical"
+            app:shake_min_duration="10000"
+            app:shake_max_duration="20000"
+            app:shake_variance="500dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
